@@ -8,89 +8,89 @@ e3dc_modbus:
       sensors:
         # Identification Block
         - name: E3DC Modbus Firmware
-          unique_id: e3dc_modbus_firmware
+          unique_id: e3dc_modbus_firmware_raw
           address: 40001
           data_type: uint16
           scan_interval: 86400
         - name: E3DC Manufacturer
-          unique_id: e3dc_manufacturer
+          unique_id: e3dc_manufacturer_raw
           address: 40003
           data_type: string
           count: 16
           scan_interval: 86400
         - name: E3DC Model
-          unique_id: e3dc_model
+          unique_id: e3dc_model_raw
           address: 40019
           data_type: string
           count: 16
           scan_interval: 86400
         - name: E3DC Serial Number
-          unique_id: e3dc_serial_number
+          unique_id: e3dc_serial_number_raw
           address: 40035
           data_type: string
           count: 16
           scan_interval: 86400
         - name: E3DC Firmware Release
-          unique_id: e3dc_firmware_release
+          unique_id: e3dc_firmware_release_raw
           address: 40051
           data_type: string
           count: 16
           scan_interval: 86400
         # Power Data
-        - name: E3DC Solar Power
-          unique_id: e3dc_solar_power
+        - name: E3DC Solar Power (RAW)
+          unique_id: e3dc_solar_power_raw
           unit_of_measurement: W
           device_class: power
           data_type: int32
           address: 40067
           scan_interval: 2
           swap: word
-        - name: E3DC Battery Power
-          unique_id: e3dc_battery_power
+        - name: E3DC Battery Power (RAW)
+          unique_id: e3dc_battery_power_raw
           unit_of_measurement: W
           device_class: power
           data_type: int32
           address: 40069
           scan_interval: 2
           swap: word
-        - name: E3DC Power Consumption House
-          unique_id: e3dc_house_consumption_power
+        - name: E3DC Power Consumption House (RAW)
+          unique_id: e3dc_house_consumption_power_raw
           unit_of_measurement: W
           device_class: power
           data_type: int32
           address: 40071
           scan_interval: 2
           swap: word
-        - name: E3DC Grid Power
-          unique_id: e3dc_grid_power
+        - name: E3DC Grid Power (RAW)
+          unique_id: e3dc_grid_power_raw
           unit_of_measurement: W
           device_class: power
           data_type: int32
           address: 40073
           scan_interval: 2
           swap: word
-        - name: E3DC External Power
-          unique_id: e3dc_external_power
+        - name: E3DC External Power (RAW)
+          unique_id: e3dc_external_power_raw
           unit_of_measurement: W
           device_class: power
           data_type: int32
           address: 40075
           scan_interval: 2
           swap: word
-        - name: E3DC Autarky and Consumption
-          unique_id: e3dc_autarky_and_consumption
+        - name: E3DC Autarky and Consumption (RAW)
+          unique_id: e3dc_autarky_and_consumption_raw
           data_type: int16
           address: 40081
           scan_interval: 60
         - name: E3DC Battery State of Charge
-          unique_id: e3dc_battery_state_of_charge
+          unique_id: e3dc_battery_state_of_charge_raw
           unit_of_measurement: "%"
           device_class: battery
           data_type: int16
           address: 40082
           scan_interval: 30
-        - name: E3DC Emergency Power State
-          unique_id: e3dc_emergency_power_state
+        - name: E3DC Emergency Power State (RAW)
+          unique_id: e3dc_emergency_power_state_raw
           data_type: int16
           address: 40083
           scan_interval: 10

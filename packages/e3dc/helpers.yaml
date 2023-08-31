@@ -1,0 +1,59 @@
+e3dc_sensors_helpers:
+  sensor:
+    # Integrations
+    - platform: integration
+      source: sensor.e3dc_external_power
+      name: E3DC External Energy
+      unique_id: e3dc_external_energy
+      unit_prefix: k
+      unit_time: h
+      round: 2
+      method: left
+    - platform: integration
+      source: sensor.e3dc_grid_import_power
+      name: E3DC Grid Import Energy
+      unique_id: e3dc_grid_import_energy
+      unit_prefix: k
+      unit_time: h
+      round: 2
+      method: left
+    - platform: integration
+      source: sensor.e3dc_grid_export_power
+      name: E3DC Grid Export Energy
+      unique_id: e3dc_grid_export_energy
+      unit_prefix: k
+      unit_time: h
+      round: 2
+      method: left
+    - platform: integration
+      source: sensor.e3dc_solar_power_raw
+      name: E3DC Solar Energy
+      unique_id: e3dc_solar_energy
+      unit_prefix: k
+      unit_time: h
+      round: 2
+      method: left
+    - platform: integration
+      source: sensor.e3dc_battery_power_raw
+      name: E3DC Builtin Battery Energy
+      unique_id: e3dc_builtin_battery_energy
+      unit_prefix: k
+      unit_time: h
+      round: 2
+      method: left
+    - platform: integration
+      source: sensor.e3dc_battery_charge_power
+      name: E3DC Battery Charge Energy
+      unique_id: e3dc_battery_charge_energy
+      unit_prefix: k
+      unit_time: h
+      round: 2
+      method: left
+    - platform: integration
+      source: sensor.e3dc_battery_discharge_power
+      name: E3DC Battery Discharge Energy
+      unique_id: e3dc_battery_discharge_energy
+      unit_prefix: k
+      unit_time: h
+      round: 2
+      method: left
